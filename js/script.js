@@ -14,8 +14,10 @@ $.ajax({
           let city = "<p>" + data.results[i].location.city + "</p>"
           let img = "<div class='crop'><img src=" + data.results[i].picture.thumbnail + "></div>"
           let phone = "<p>" + data.results[i].cell + "</p>"
-          let dob = "<p>" + data.results[i].dob + "</p>"
-          let address = "<p>" + data.results[i].location.street +  " " + data.results[i].location.city + data.results[i].location.city + data.results[i].location.postcode + "</p>"
+          let detailBirthDate = data.results[i].dob
+          let readyBirthDate = detailBirthDate.substr(0,10);
+          let dob = "<p> Birthday:" + readyBirthDate + "</p>"
+          let address = "<p>" + data.results[i].location.street +  " " + data.results[i].location.city +  " " + data.results[i].location.postcode +  " " + data.results[i].nat +  " " + dob + "</p>"
 
           //push necessary attributes to array so they persist and can be called and add in modal window
           people[i] =  "<div class='photo'>" + img + "</div>" + "<div class='text'>" + name + email+ city + phone + address + "</div>"
