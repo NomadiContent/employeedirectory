@@ -11,6 +11,10 @@
   line-height: 20px;
 }
 
+span h1 {
+  padding-left: 15px;
+}
+
 * {
     box-sizing: border-box;
 }
