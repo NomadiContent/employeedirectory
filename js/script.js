@@ -17,6 +17,7 @@ $.ajax({
           let detailBirthDate = data.results[i].dob
           let readyBirthDate = detailBirthDate.substr(0,10);
           let dob = "<p> Birthday:" + readyBirthDate + "</p>"
+          //Spec asks that submission include country. Checked docs and nat is the closest data point.
           let address = "<p>" + data.results[i].location.street +  " " + data.results[i].location.city +  " " + data.results[i].location.postcode +  " " + data.results[i].nat +  " " + dob + "</p>"
 
           //push necessary attributes to array so they persist and can be called and add in modal window
