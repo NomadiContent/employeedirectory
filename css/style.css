@@ -29,7 +29,7 @@ span h1 {
 }
 
 
-
+/* define column size */
 .col-0 {width: 31%;}
 .col-1 {width: 31%;}
 .col-2 {width: 31%;}
@@ -59,6 +59,7 @@ div {
     float: left;
 }
 
+/* div for rounding img */
 .crop {
  width: 70px;
  height: 70px;
